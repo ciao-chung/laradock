@@ -1673,6 +1673,5 @@ WORKDIR /var/www
 
 COPY ./config.fish /home/laradock/.config/fish/config.fish
 
-RUN apt-get install xclip -y \
-  && yarn global add hyper-rocket \
+RUN yarn global add hyper-rocket \
   && hyper-rocket fish:install -x
